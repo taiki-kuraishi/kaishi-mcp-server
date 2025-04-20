@@ -1,0 +1,32 @@
+{
+  "name": "kaishi-mcp-server",
+  "version": "0.0.0",
+  "module": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "prepare": "lefthook install",
+    "dev": "wrangler dev",
+    "format": "bunx biome check --fix --unsafe",
+    "lint": "bun run format && bun tsc && bun editorconfig-checker",
+    "inspector": "bunx @modelcontextprotocol/inspector",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250420.0",
+    "@types/bun": "latest",
+    "editorconfig-checker": "^6.0.1",
+    "marked": "^15.0.7",
+    "typescript": "^5.5.2",
+    "workers-mcp": "^0.1.0-3",
+    "wrangler": "^4.12.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "agents": "^0.0.53",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
