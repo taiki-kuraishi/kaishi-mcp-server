@@ -15,7 +15,7 @@
     "@cloudflare/workers-types": "^4.20250420.0",
     "@types/bun": "latest",
     "editorconfig-checker": "^6.0.1",
-    "lefthook": "^1.11.10",
+    "lefthook": "^1.11.11",
     "marked": "^15.0.7",
     "typescript": "^5.5.2",
     "workers-mcp": "^0.1.0-3",
