@@ -4,20 +4,17 @@
     "": {
       "name": "kaishi-mcp-server",
       "dependencies": {
-        "@modelcontextprotocol/sdk": "^1.7.0",
-        "agents": "^0.0.62",
-        "zod": "^3.24.2",
+        "@modelcontextprotocol/sdk": "1.10.1",
+        "agents": "0.0.62",
+        "zod": "3.24.3",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@cloudflare/workers-types": "^4.20250420.0",
-        "editorconfig-checker": "^6.0.1",
-        "lefthook": "^1.11.10",
-        "typescript": "^5.5.2",
-        "wrangler": "^4.12.0",
-      },
-      "peerDependencies": {
-        "typescript": "^5.0.0",
+        "@cloudflare/workers-types": "4.20250422.0",
+        "editorconfig-checker": "6.0.1",
+        "lefthook": "1.11.11",
+        "typescript": "5.8.3",
+        "wrangler": "4.12.0",
       },
     },
   },
