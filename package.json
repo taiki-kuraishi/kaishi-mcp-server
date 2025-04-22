@@ -6,12 +6,13 @@
   "scripts": {
     "prepare": "lefthook install",
     "dev": "wrangler dev",
-    "format": "bunx biome check --fix --unsafe",
-    "lint": "bun run format && bun tsc && bun editorconfig-checker",
+    "format": "biome check --fix --unsafe",
+    "lint": "bun format && bun tsc && bun editorconfig-checker",
     "inspector": "bunx @modelcontextprotocol/inspector",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@cloudflare/workers-types": "^4.20250420.0",
     "@types/bun": "latest",
     "editorconfig-checker": "^6.0.1",
