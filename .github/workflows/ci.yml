@@ -22,6 +22,7 @@ jobs:
           path: ${{ github.workspace }}/node_modules
           key: ${{ runner.os }}-node-modules-${{ hashFiles('**/bun.lock') }}
       - run: bun install --frozen-lockfile
+      - run: bunx depcheck
       - run: bun run cf-typegen
       - name: diff check cf-typegen
         run: git diff --exit-code -- worker-configuration.d.ts

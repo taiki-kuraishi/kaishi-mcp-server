@@ -11,3 +11,5 @@ pre-commit:
     cloudflare-type-generate:
       stage_fixed: true
       run: bun run cf-typegen
+    depcheck:
+      run: bunx depcheck
