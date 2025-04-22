@@ -5,7 +5,7 @@
       "name": "kaishi-mcp-server",
       "dependencies": {
         "@modelcontextprotocol/sdk": "^1.7.0",
-        "agents": "^0.0.53",
+        "agents": "^0.0.62",
         "hono": "^4.7.4",
         "zod": "^3.24.2",
       },
@@ -200,7 +200,7 @@
 
     "acorn-walk": ["acorn-walk@8.3.2", "", {}, "sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A=="],
 
-    "agents": ["agents@0.0.53", "", { "dependencies": { "@modelcontextprotocol/sdk": "^1.8.0", "cron-schedule": "^5.0.4", "nanoid": "^5.1.5", "partyserver": "^0.0.66", "partysocket": "1.1.3" } }, "sha512-FNQlUW4pNJ/vOlHfMzIH15rB+7IY2TykyyPtnR0cIRJkDAKKSKYlboMmBcyWUpMumw0En/CMR/G/lEU2kPwxcQ=="],
+    "agents": ["agents@0.0.62", "", { "dependencies": { "@modelcontextprotocol/sdk": "^1.9.0", "cron-schedule": "^5.0.4", "nanoid": "^5.1.5", "partyserver": "^0.0.66", "partysocket": "1.1.3" } }, "sha512-jxBdXzEi4g0JY/ZWxxCsYmPsFoAy04vDFIALPofo5IIzN2mf0yPFWoIcCaJRU3NO2KsyAH1OmWJIWuRq7QuN0w=="],
 
     "argparse": ["argparse@2.0.1", "", {}, "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="],
 
