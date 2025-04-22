@@ -1,5 +1,5 @@
-import { McpAgent } from "agents/mcp";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpAgent } from "agents/mcp";
 import { z } from "zod";
 
 export class KaishiMCP extends McpAgent {
@@ -16,5 +16,5 @@ export class KaishiMCP extends McpAgent {
 }
 
 export default {
-  fetch: KaishiMCP.mount("/").fetch
+  fetch: KaishiMCP.mount("/").fetch,
 };

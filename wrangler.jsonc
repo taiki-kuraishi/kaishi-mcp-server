@@ -3,8 +3,20 @@
   "name": "kaishi-mcp-server",
   "main": "src/index.ts",
   "compatibility_date": "2025-01-29",
-  "compatibility_flags": [
-    "nodejs_compat"
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "KaishiMCP",
+        "name": "MCP_OBJECT"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["KaishiMCP"]
+    }
   ],
   "observability": {
     "enabled": true
