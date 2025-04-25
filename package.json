@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "4.20250424.0",
+    "@cloudflare/workers-types": "4.20250425.0",
     "editorconfig-checker": "6.0.1",
     "lefthook": "1.11.11",
     "typescript": "5.8.3",
