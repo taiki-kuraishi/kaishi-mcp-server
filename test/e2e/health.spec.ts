@@ -6,7 +6,7 @@ describe("test /", () => {
     const response = await fetch("http://localhost:8787/");
 
     // assert
-    expect(await response.status).toBe(200);
+    expect(response.status).toBe(200);
     expect(await response.json()).toEqual({ message: "OK" });
   });
 });
