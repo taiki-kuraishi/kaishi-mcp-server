@@ -28,5 +28,10 @@
     "enabled": true,
     "indentStyle": "space",
     "lineWidth": 100
+  },
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
   }
 }

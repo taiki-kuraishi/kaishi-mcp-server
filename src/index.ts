@@ -1,20 +1,18 @@
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { McpAgent } from "agents/mcp";
-import { z } from "zod";
+import "reflect-metadata";
+import { Hono } from "hono";
+import { KaishiMcpAgent } from "./mcp/kaishi-mcp-agent";
+import { health } from "./routers/health";
+import { mcp } from "./routers/mcp";
+import { sse } from "./routers/sse";
 
-export class KaishiMCP extends McpAgent {
-  server = new McpServer({
-    name: "kaishi-mcp-server",
-    version: "1.0.0",
-  });
+export const KaishiMCP = KaishiMcpAgent;
 
-  async init() {
-    this.server.tool("add", { a: z.number(), b: z.number() }, async ({ a, b }) => ({
-      content: [{ type: "text", text: String(a + b) }],
-    }));
-  }
-}
+const app = new Hono();
 
-export default {
-  fetch: KaishiMCP.mount("/").fetch,
-};
+// routers
+app.route("/", health);
+app.route("/sse", sse);
+app.route("/sse/message", sse);
+app.route("/mcp", mcp);
+
+export default app;
