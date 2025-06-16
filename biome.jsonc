@@ -5,7 +5,14 @@
   },
   "files": {
     "include": ["**/*"],
-    "ignore": [".vscode", ".wrangler", "bun.lock", "node_modules", "worker-configuration.d.ts"]
+    "ignore": [
+      ".vscode",
+      ".wrangler",
+      "bun.lock",
+      "node_modules",
+      "worker-configuration.d.ts",
+      "src/types/app-router.d.ts"
+    ]
   },
   "vcs": {
     "enabled": true,
