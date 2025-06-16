@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "prepare": "lefthook install",
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --port 8788",
     "format": "biome check --fix --unsafe",
     "lint": "bun format && bun tsc && bun editorconfig-checker && bun knip-bun",
     "inspector": "bunx @modelcontextprotocol/inspector",
@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
+    "@trpc/client": "^11.4.1",
+    "@trpc/server": "^11.4.1",
     "agents": "^0.0.95",
     "hono": "^4.7.11",
     "reflect-metadata": "^0.2.2",
-    "tsyringe": "^4.10.0",
-    "zod": "^3.25.61"
+    "superjson": "^2.2.2",
+    "tsyringe": "^4.10.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
