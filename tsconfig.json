@@ -18,7 +18,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noPropertyAccessFromIndexSignature": true,
-    "types": ["@cloudflare/workers-types/2023-07-01"]
+    "types": ["@cloudflare/workers-types/2023-07-01"],
+    // for tsyringe
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["worker-configuration.d.ts", "src/**/*.ts"]
 }
