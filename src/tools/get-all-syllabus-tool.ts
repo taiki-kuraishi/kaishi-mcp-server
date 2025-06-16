@@ -9,7 +9,6 @@ export class GetAllSyllabusTool extends AbstractTool {
   register(server: McpServer): void {
     server.tool("getAllSyllabus", "Retrieves all syllabus entries.", {}, async () => {
       const res = await syllabusApiTrpcClient.syllabusRouter.getAll.query();
-      console.log("getAllSyllabusTool", res);
 
       return {
         content: [
