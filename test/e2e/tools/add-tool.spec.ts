@@ -21,7 +21,7 @@ describe("test add-tool", () => {
     })) as CallToolResult;
 
     // assert
-    expect(res.content).length(1);
+    expect(res.content).toHaveLength(1);
     expect(res.content[0].type).toBe("text");
     expect(res.content[0].text).toBe("5 + 3 = 8");
   });
