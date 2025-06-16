@@ -23,7 +23,7 @@ describe("test /mcp", () => {
     const tools = await client.listTools();
 
     // assert
-    expect(tools.tools).length(1);
+    expect(tools.tools).toHaveLength(1);
   });
 
   it("test ping", async () => {
